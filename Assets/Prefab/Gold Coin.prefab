@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: -3275796358234950365}
   - component: {fileID: 2188537542288251742}
   m_Layer: 0
-  m_Name: Circle Coin
+  m_Name: Gold Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
