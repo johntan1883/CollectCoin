@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 589470710}
   - component: {fileID: 589470709}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: SilverCoinSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoinPrefab: {fileID: 5228176140730367239, guid: 47219cc4400c36a44a3f71d38847e87f, type: 3}
   DurationLeft: 60
-  SpawnInterval: 0.5
+  SpawnInterval: 1
   minX: -9
   maxX: 9
   CoinCollected: 0
@@ -678,6 +678,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266562043}
   m_CullTransparentMesh: 1
+--- !u!1 &1687609858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687609860}
+  - component: {fileID: 1687609859}
+  m_Layer: 0
+  m_Name: GoldCoinSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1687609859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687609858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cfa6f93a59a95041964604afefe3656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinPrefab: {fileID: 9050742006094371211, guid: 9925262fef05a2f43abd5d04ae167953, type: 3}
+  GoldCoinSpawnInterval: 5
+  minX: -9
+  maxX: 9
+--- !u!4 &1687609860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687609858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 5.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1802208397
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +787,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.057493728, g: 0.4811321, b: 0.13697532, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -758,8 +806,8 @@ Transform:
   m_GameObject: {fileID: 1802208397}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0109, y: -4.6096, z: 0}
-  m_LocalScale: {x: 19.405983, y: 1.0121269, z: 1.053}
+  m_LocalPosition: {x: 0.0159, y: -4.6096, z: 0}
+  m_LocalScale: {x: 19.99116, y: 1.0121269, z: 1.053}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -901,7 +949,8 @@ SceneRoots:
   - {fileID: 43384621913981579}
   - {fileID: 350689557}
   - {fileID: 1802208399}
-  - {fileID: 589470710}
   - {fileID: 896282779}
   - {fileID: 977928921}
   - {fileID: 789075576}
+  - {fileID: 589470710}
+  - {fileID: 1687609860}

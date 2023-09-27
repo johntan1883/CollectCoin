@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 
     public float SpawnInterval = 1f;
 
+
     private float spawnTimer;
 
     public float minX = -1f;
@@ -46,7 +47,7 @@ public class Spawner : MonoBehaviour
                 GameObject.Instantiate(CoinPrefab, transform.position + randomPos, transform.rotation);
             }
 
-            Debug.Log("Times up, should spawn coin");
+            Debug.Log("Times up, should spawn silver coin");
             spawnTimer = SpawnInterval;
         }
     }
