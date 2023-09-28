@@ -122,9 +122,9 @@ MonoBehaviour:
   CoinsAmount: 10
   _AudioSource: {fileID: 0}
   CoinCollectedAudio: {fileID: 6090410006620670006, guid: dc891afd767573c43bf4e217dc68cebd, type: 3}
-  Effects: {fileID: 6637895864554467734, guid: fae5b0179a62c6e499a80fcda3f8e78e, type: 3}
+  Effects: {fileID: 6637895864554467734, guid: 4b27d64a2192fcf4184d4798b345c40a, type: 3}
   _Collider2D: {fileID: 0}
-  DespawnInterval: 1
+  DespawnInterval: 1.5
 --- !u!1 &8456541028780269958
 GameObject:
   m_ObjectHideFlags: 0
